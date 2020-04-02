@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="classes">
+	<parameter name="browser" value="chrome" />
+
+	<test thread-count="5" name="Test1">
+		<parameter name="iteration" value="1" />
+		<parameter name="testcaseId" value="1388415" />
+		<parameter name="dealers" value="Agland Corporation,Lloydminster,AB" />
+		<parameter name="category" value="AL350" />
+		
+		<classes>
+			<class name="com.doosanbobcat.testscripts.SearchUsingDataProvider" />
+		</classes>
+	</test>
+
+	<!-- Test -->
+</suite> <!-- Suite -->

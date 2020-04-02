@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite"  thread-count="5" parallel ="classes"> -->
+<suite name="Suite"  thread-count="5" parallel ="classes">
+  	<parameter name="browser" value="chrome" />
+  	
+  <test thread-count="5" name="Test1" parallel ="classes">
+  <parameter name="iteration" value="1" />
+    <classes>
+      <class name="com.doosanbobcat.testscripts.SearchUsingDataProvider"/>
+      <!-- <class name="com.doosanbobcat.testscripts.SearchUsingDataProvider2"/> -->
+      <!-- <class name="com.doosanbobcat.testscripts.SearchUsingDataProvider3"/> -->
+    </classes>
+  </test> 
+  
+  <!-- <test thread-count="5" name="Test2">
+  <parameter name="iteration" value="2" />
+    <classes>
+     <class name="com.doosanbobcat.testscripts.SearchUsingDataProvider"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Test3">
+  <parameter name="iteration" value="3" />
+    <classes>
+      <class name="com.doosanbobcat.testscripts.Search"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Test4">
+  <parameter name="iteration" value="4" />
+    <classes>
+      <class name="com.doosanbobcat.testscripts.Search"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Test5">
+  <parameter name="iteration" value="5" />
+    <classes>
+     <class name="com.doosanbobcat.testscripts.Search"/>
+    </classes>
+  </test> -->
+  
+  
+  <!-- Test -->
+</suite> <!-- Suite -->
